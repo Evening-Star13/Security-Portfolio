@@ -77,7 +77,7 @@ span {
 
 #menu-icon {
   font-size: 36px;
-  color: var(--text-color);
+  color: var(--highlight-color);
   display: none;
 }
 
