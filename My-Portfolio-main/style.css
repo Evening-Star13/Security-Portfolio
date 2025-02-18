@@ -15,9 +15,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  border: none;
-  outline: none;
-  text-decoration: none;
 }
 
 html {
@@ -25,18 +22,15 @@ html {
 }
 
 body {
-  background-color: #1f242d;
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 150px; */
   padding: 20px 9%;
-  background: transparent;
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
@@ -55,6 +49,10 @@ span {
 .logo {
   cursor: pointer;
   animation: slideRight 1s ease forwards;
+}
+
+.navbar {
+  display: flex;
 }
 
 .navbar a {
@@ -133,8 +131,6 @@ span {
 
 .home-img img {
   width: 100%;
-  /* height: 34.375rem; */
-  margin-right: -20px;
   border-radius: 50%;
   box-shadow: 0 0 20px 1px var(--highlight-color);
   opacity: 0;
@@ -194,14 +190,13 @@ span {
   align-items: center;
   gap: 50px;
   background-color: var(--second-bg-color);
-  /* padding-top: 100px; */
   margin-bottom: 50px;
 }
 
 .about-img {
-  padding-top: 7rem;
+  padding-top: 3rem; /* Adjusted padding */
   width: 100%;
-  transform: translateY(-75px);
+  transform: translateY(0); /* Removed translateY */
 }
 
 .heading {
@@ -226,7 +221,7 @@ span {
 /* COMMENT: Services */
 .services {
   padding-top: 150px;
-  height: 70vh;
+  height: auto;
   margin-bottom: 8rem;
 }
 
@@ -271,7 +266,7 @@ span {
   margin: 10px 0 30px;
 }
 
-/* COMMENT: Portfoilio */
+/* COMMENT: Portfolio */
 .portfolio {
   background-color: var(--second-bg-color);
   padding-top: 100px;
@@ -409,6 +404,13 @@ span {
   font-size: 16px;
 }
 
+.footer-iconTop {
+  position: fixed; /* Make it fixed */
+  bottom: 20px; /* Position at the bottom */
+  right: 20px; /* Position to the far right */
+  z-index: 100; /* Ensure it stays above other elements */
+}
+
 .footer-iconTop a {
   display: inline-flex;
   justify-content: center;
@@ -434,7 +436,6 @@ span {
     transform: translateX(-100px);
     opacity: 0;
   }
-
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -446,7 +447,6 @@ span {
     transform: translateY(100px);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -458,7 +458,6 @@ span {
     transform: translateY(-100px);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -470,7 +469,6 @@ span {
     transform: translateX(100px);
     opacity: 0;
   }
-
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -482,26 +480,11 @@ span {
     transform: scale(0);
     opacity: 0;
   }
-
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
-
-/* @keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-40px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-} */
 
 /* COMMENT: Breakpoints */
 @media (max-width: 1200px) {
@@ -512,7 +495,7 @@ span {
   .portfolio {
     padding: 0 0 75px 0;
   }
-  
+
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 3rem;
@@ -555,7 +538,6 @@ span {
   }
 
   .services {
-    /* padding-bottom: 4.375rem; */
     height: auto;
   }
 
@@ -591,7 +573,6 @@ span {
     font-size: 1.5rem;
   }
 
-
   .footer {
     padding: 20px 3%;
   }
@@ -602,7 +583,8 @@ span {
 
   .about img {
     width: 50vw;
-    transform: translateY(-10px);
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
   }
 }
 
@@ -646,17 +628,8 @@ span {
     font-size: 1.625rem;
   }
 
-  .home-content .greeting {
-    padding-top: 100px;
-  }
-
   .home-content h1 {
     font-size: 3.125rem;
-  }
-
-  .home-img img {
-    width: 40vw;
-    margin-bottom: 2.5rem;
   }
 
   .about {
@@ -682,7 +655,6 @@ span {
     margin: 0 3rem;
   }
 
-  
   .portfolio-layer h4 {
     font-size: 3rem;
   }
@@ -700,5 +672,47 @@ span {
 
   .portfolio-layer a i {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 50px 5% 0; /* Adjust padding for small devices */
+  }
+
+  .home-img img {
+    width: 80vw; /* Resize image for small devices */
+    margin: 0; /* Remove margin */
+  }
+
+  .home-content h3 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .home-content p {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .about {
+    flex-direction: column; /* Stack elements */
+    gap: 20px; /* Adjust gap */
+  }
+
+  .about img {
+    width: 80vw; /* Resize image for small devices */
+  }
+
+  .services h2,
+  .portfolio h2 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .services-container .services-box,
+  .portfolio-container .portfolio-box {
+    flex: 1 1 100%; /* Full width for small devices */
   }
 }
