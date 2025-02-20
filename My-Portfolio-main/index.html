@@ -1,204 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Security Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./main.js" defer></script>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Security Portfolio</title>
-</head>
+  <body>
+    <!-- COMMENT:  Main Section-->
+    <header class="header">
+      <a href="./vision.html" target="_blank" class="logo"
+        ><img src="./img/logo_med_blue3.png" title="Our Vision" alt=""
+      /></a>
 
-<body>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-  <!-- COMMENT:  Main Section-->
-  <header class="header">
-    <a href="./vision.html" target="_blank" class="logo"><img src="./img/logo_med_blue3.png" title="Our Vision"
-        alt=""></a>
+      <nav class="navbar">
+        <a href="#home" style="--i: 1">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#services" style="--i: 3">Services</a>
+        <a href="#portfolio" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
+    </header>
 
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <nav class="navbar">
-      <a href="#home" style="--i:1;">Home</a>
-      <a href="#about" style="--i:2;">About</a>
-      <a href="#services" style="--i:3;">Services</a>
-      <a href="#portfolio" style="--i:4;">Portfolio</a>
-      <a href="#contact" style="--i:5;">Contact</a>
-    </nav>
-  </header>
-
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3 class="greeting">Hello, It's Me</h3>
-      <h1>Chris Barranger</h1>
-      <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>A passionate software developer with over 20 years of experience in creating innovative solutions, enhancing
-        user experiences, and developing security software to protect digital assets.</p>
-      <div class="social-media">
-        <a href="#" style="--i:7" title="My Site"><i class='bx bx-link-alt'></i></a>
-        <a href="https://github.com/Evening-Star13" style="--i:8" title="Github"><i class='bx bxl-github'></i></a>
-        <a href="https://codepen.io/christophereveningstar" style="--i:9" title="Codepen"><i
-            class='bx bxl-codepen'></i></a>
-        <a href="#" style="--i:10" title="Instagram"><i class='bx bxl-instagram-alt'></i></a>
-
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3 class="greeting">Hello, It's Me</h3>
+        <h1>Chris Barranger</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          A passionate software developer with over 20 years of experience in
+          creating innovative solutions, enhancing user experiences, and
+          developing security software to protect digital assets.
+        </p>
+        <div class="social-media">
+          <a href="#" style="--i: 7" title="My Site"
+            ><i class="bx bx-link-alt"></i
+          ></a>
+          <a
+            href="https://github.com/Evening-Star13"
+            style="--i: 8"
+            title="Github"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://codepen.io/christophereveningstar"
+            style="--i: 9"
+            title="Codepen"
+            ><i class="bx bxl-codepen"></i
+          ></a>
+          <a href="#" style="--i: 10" title="Instagram"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
       </div>
-      <a href="#" class="btn">Download CV</a>
-    </div>
-    <div class="home-img">
-      <img src="./img/us_blue.png" alt="">
-    </div>
-  </section>
+      <div class="home-img">
+        <img src="./img/us_blue.png" alt="" />
+      </div>
+    </section>
 
+    <!-- COMMENT:  About Section Design-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./img/smile.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Cyber Security Specialist</h3>
+        <p class="about-content-info">
+          I am a dedicated Cyber Security Specialist with a passion for
+          protecting digital assets. With extensive experience in threat
+          analysis and risk management, I strive to implement robust security
+          measures. My goal is to ensure a safe online environment while
+          continuously adapting to emerging cyber threats.
+        </p>
+        <!-- Trigger Button -->
+        <a class="btn" id="openModal">Read More</a>
 
-  <!-- COMMENT:  About Section Design-->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="./img/smile.png" alt="">
-    </div>
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Cyber Security Specialist</h3>
-      <p class="about-content-info">I am a dedicated Cyber Security Specialist with a passion for protecting digital
-        assets. With extensive experience in threat analysis and risk management, I strive to implement robust security
-        measures. My goal is to ensure a safe online environment while continuously adapting to emerging cyber threats.
-      </p>
-      <!-- Trigger Button -->
-      <a class="btn" id="openModal">Read More</a>
-
-      <!-- Modal Structure -->
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Vision</h2>
-          <p>Hi There</p>
-          <!-- <a href="#" class="btn">Read More</a> -->
+        <!-- Modal Structure -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Vision</h2>
+            <p>Hi There</p>
+            <!-- <a href="#" class="btn">Read More</a> -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- COMMENT:  Services Section Design-->
-  <section class="services" id="services">
-    <h2 class="heading">Our <span>Services</span></h2>
-    <div class="services-container">
-      <div class="services-box">
-        <i class="bx bxs-lock"></i>
-        <h3>Application Security</h3>
-        <p>We provide comprehensive application security solutions to protect your software from vulnerabilities,
-          ensuring data integrity and safeguarding user information against threats.</p>
-        <a href="/My-Portfolio-main/services.html" target="_blank" class="btn">Read More</a>
-      </div>
-      <div class="services-box">
-        <i class="bx bxs-virus-block"></i>
-        <h3>Air Gap Security</h3>
-        <p>Our Air Gap Security service ensures complete isolation of critical systems from unsecured networks,
-          protecting sensitive data from cyber threats and unauthorized access.</p>
-        <a href="/My-Portfolio-main/services.html" target="_blank" class="btn">Read More</a>
-      </div>
-      <div class="services-box">
-        <i class='bx bx-desktop'></i>
-        <h3>Network Security</h3>
-        <p>We provide comprehensive network security solutions to protect your data, prevent unauthorized access, and
-          ensure the integrity of your network infrastructure.</p>
-        <a href="/My-Portfolio-main/network_security.html" target="_blank" class="btn">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMENT: Portfolio Section Design-->
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="./img/AI.png" alt="">
-        <div class="portfolio-layer">
-          <h4>Access Assessment</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, enim?</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+    <!-- COMMENT:  Services Section Design-->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bxs-lock"></i>
+          <h3>Application Security</h3>
+          <p>
+            We provide comprehensive application security solutions to protect
+            your software from vulnerabilities, ensuring data integrity and
+            safeguarding user information against threats.
+          </p>
+          <a href="/My-Portfolio-main/services.html" target="_blank" class="btn"
+            >Read More</a
+          >
+        </div>
+        <div class="services-box">
+          <i class="bx bxs-virus-block"></i>
+          <h3>Air Gap Security</h3>
+          <p>
+            Our Air Gap Security service ensures complete isolation of critical
+            systems from unsecured networks, protecting sensitive data from
+            cyber threats and unauthorized access.
+          </p>
+          <a href="/My-Portfolio-main/services.html" target="_blank" class="btn"
+            >Read More</a
+          >
+        </div>
+        <div class="services-box">
+          <i class="bx bx-desktop"></i>
+          <h3>Network Security</h3>
+          <p>
+            We provide comprehensive network security solutions to protect your
+            data, prevent unauthorized access, and ensure the integrity of your
+            network infrastructure.
+          </p>
+          <a
+            href="/My-Portfolio-main/network_security.html"
+            target="_blank"
+            class="btn"
+            >Read More</a
+          >
         </div>
       </div>
-      <div class="portfolio-box">
-        <img src="./img/Breach.png" alt="">
-        <div class="portfolio-layer">
-          <h4>Breach Detection</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, enim?</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+    </section>
+
+    <!-- COMMENT: Portfolio Section Design-->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./img/AI.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Access Assessment</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores, enim?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./img/Breach.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Breach Detection</h4>
+            <p>
+              Evaluate and enhance security measures to protect sensitive data
+              and ensure compliance with industry standards.
+            </p>
+
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./img/ThAss.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Threat Assessment</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores, enim?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./img/Eye.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Ocular Recognition</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores, enim?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./img/bi.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>DNA Recognition</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores, enim?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./img/world.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>AI Re-Enforced Security</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores, enim?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
         </div>
       </div>
-      <div class="portfolio-box">
-        <img src="./img/ThAss.png" alt="">
-        <div class="portfolio-layer">
-          <h4>Threat Assessment</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, enim?</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+    </section>
+
+    <!-- COMMENT: Contact Section Design-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
         </div>
-      </div>
-      <div class="portfolio-box">
-        <img src="./img/Eye.png" alt="">
-        <div class="portfolio-layer">
-          <h4>Ocular Recognition</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, enim?</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
         </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- COMMENT: Footer Design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Chris Barranger | All Rights Reserved.</p>
       </div>
-      <div class="portfolio-box">
-        <img src="./img/bi.png" alt="">
-        <div class="portfolio-layer">
-          <h4>DNA Recognition</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, enim?</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
-        </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bxs-chevrons-up"></i></a>
       </div>
-      <div class="portfolio-box">
-        <img src="./img/world.png" alt="">
-        <div class="portfolio-layer">
-          <h4>AI Re-Enforced Security</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, enim?</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- COMMENT: Contact Section Design-->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
-      </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-  </section>
-
-  <!-- COMMENT: Footer Design -->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2023 by Chris Barranger | All Rights Reserved.</p>
-    </div>
-
-    <div class="footer-iconTop">
-      <a href="#home"><i class='bx bxs-chevrons-up'></i></a>
-    </div>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </body>
 </html>
