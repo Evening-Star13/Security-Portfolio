@@ -1,4 +1,4 @@
-var typed = new Typed(".multiple-text", {
+let typed = new Typed(".multiple-text", {
   strings: [
     " Cyber Security",
     " Air Gap Security",
@@ -49,13 +49,13 @@ window.onscroll = () => {
 };
 
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("openModal");
+let btn = document.getElementById("openModal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
 btn.onclick = function () {

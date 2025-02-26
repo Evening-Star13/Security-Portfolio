@@ -860,7 +860,7 @@ span {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #0000ff;
   text-decoration: none;
   cursor: pointer;
 }
